@@ -1,0 +1,69 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'sans-serif';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* background: #E3F2FD; */
+    background: url("https://media.istockphoto.com/id/1075478326/photo/vintage-antique-snakes-and-ladders-board-game.jpg?s=612x612&w=0&k=20&c=5Ehqo4DGY_iYyMbjlWGchHODBC-lvwRzwh7RBBsywys=");
+}
+
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #293447;
+
+}
+
+.game-details {
+    color: #B8C6DC;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background: #212837;
+}
+
+.play-board .food {
+    background: #FF003D;
+}
+
+.play-board .head {
+    background: #60CBFF;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.controls i {
+    padding: 25px 0;
+    color: #B8C6DC;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: calc(100% / 4);
+    border-right: 1px solid #171b26;
+
+}
